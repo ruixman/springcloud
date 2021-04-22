@@ -1,0 +1,4 @@
+# Project exclude paths
+/eureka-server/target/
+/product-data-service/target/
+/product-view-service-ribbon/target/

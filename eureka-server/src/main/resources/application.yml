@@ -1,0 +1,18 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+ 
+spring:
+  application:
+    name: eureka-server
+  security:
+    basic:
+      enabled: true         #开启认证
+    user:
+      name: admin             #你的用户名
+      password: admin123        #你的密码
