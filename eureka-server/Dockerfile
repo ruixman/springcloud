@@ -1,5 +1,6 @@
-FROM java:8
+FROM hub.c.163.com/library/java:8-jre
+##FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-ADD demo.jar app.jar #demo为项目名称
-EXPOSE 8080
+ADD target/eurekaServer-0.0.1-SNAPSHOT.jar app.jar
+EXPOSE 8761
 ENTRYPOINT [ "java", "-jar", "/app.jar" ]

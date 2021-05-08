@@ -1,11 +1,9 @@
 package cn.how2j.springcloud;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import cn.hutool.core.util.NetUtil;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
-
-import cn.hutool.core.util.NetUtil;
 
 
 @SpringBootApplication
